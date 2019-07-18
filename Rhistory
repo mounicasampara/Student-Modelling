@@ -1,0 +1,512 @@
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+sqlitePath <- "d:/mydb1.db"
+db <- dbConnect(SQLite(), sqlitePath)
+dbGetQuery(db,"select id from demotest1 d1 inner join demotest2 on d1.selectedans = d2.answer")
+dbGetQuery(db,"select d1.selectedans from demotest1 d1 inner join demotest1 d2 on d1.selectedans = d2.answer")
+dbGetQuery(db,"select d1.selectedans from demotest1 d1 join demotest1 d2 on d1.selectedans = d2.answer")
+runApp()
+r <- dbGetQuery(db,"select result from demotest1 where result = 1")
+r
+r <- dbGetQuery(db,"select count(result) from demotest1 where result = 1")
+r
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+r <- dbGetQuery(db,"delete from studentmodel_final where mail_id = 'shravyayadavk@gmail.com'")
+r <- "delete from studentmodel_final where mail_id = 'shravyayadavk@gmail.com';"
+dbSendQuery(db,r)
+r <- "delete from studentmodel_final where mail_id = 'shravyayadavk@gmail.com'";
+dbSendQuery(db,r)
+r <- "insert into studentmodel_final values('shravyayadavk@gmail.com',0,0,0,0,0,0,0,0,0,0)";
+dbSendQuery(db,r)
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+sqlitePath <- "d:/mydb.db"
+sqlitePath <- "d:/mydb1.db"
+print(sqlitePath)
+db <- dbConnect(SQLite(), sqlitePath)
+print(db)
+query <- insert into demotest4 values(6,"Divide Rs. 1500 among A, B and C so that A receives 1/3 as much as B and C together and B receives 2/3 as A and C together. A's share is?",'Rs.600','Rs.525','Rs.375','Rs.650',3,0,0,'0.8','0','0','0','0.2')
+query <- "insert into demotest4 values(6,"Divide Rs. 1500 among A, B and C so that A receives 1/3 as much as B and C together and B receives 2/3 as A and C together. A's share is?",'Rs.600','Rs.525','Rs.375','Rs.650',3,0,0,'0.8','0','0','0','0.2')";
+query <- "insert into demotest4 values(6,'Divide Rs. 1500 among A, B and C so that A receives 1/3 as much as B and C together and B receives 2/3 as A and C together. A's share is?','Rs.600','Rs.525','Rs.375','Rs.650',3,0,0,'0.8','0','0','0','0.2')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(6,'Divide Rs. 1500 among A, B and C so that A receives 1/3 as much as B and C together and B receives 2/3 as A and C together. As share is?','Rs.600','Rs.525','Rs.375','Rs.650',3,0,0,'0.8','0','0','0','0.2')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(7,'The probability that a student is not a swimmer is 1/5. Then the probability that one of the five students, four are swimmers is:','5C4(4/5)2(1/5)','(4/5)2(1/5)','5C4(1/5)(4/5)4','None of these',3,0,0,'0','0.7','0','0.3','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(8,'The sector of a circle has radius of 21 cm and central angle 135o. Find its perimeter?','91.5 cm','92.5 cm','93.5 cm','94.5 cm',2,0,0,'0','0','0.9','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(9,'Six points are marked on a straight line and five points are marked on another line which is parallel to the first line. How many straight lines, including the first two, can be formed with these points?','29','33','55','32',4,0,0,'0','0','0.1','0.9','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(10,'The average of five results is 46 and that of the first four is 45. The fifth result is?','29','33','55','50',4,0,0,'0','0','0.1','0','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(11,'Rs.1170 is divided so that 4 times the first share, thrice the 2nd share and twice the third share amount to the same. What is the value of the third share?','Rs.260','Rs.270','Rs.360','Rs.540',4,0,0,'0.9','0','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(12,'A man bets on number 16 on a roulette wheel 14 times and losses each time. On the 15th span he does a quick calculation and finds out that the number 12 had appeared twice in the 14 spans and is therefore, unable to decide whether to bet on 16 or 12 in the 15th span. Which will give him the best chance and what are the odds of winning on the bet that he takes? (Roulette has numbers 1 to 36).','16;22:14','12;72:1','12;7:1','Either ;35:1',4,0,0,'0','0.9','0','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(13,'An order was placed for the supply of a carper whose length and breadth were in the ratio of 3 : 2. Subsequently, the dimensions of the carpet were altered such that its length and breadth were in the ratio 7 : 3 but were was no change in its parameter. Find the ratio of the areas of the carpets in both the cases.','4:3','8:7','6:5','4:1',2,0,0,'0','0.2','0.8','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(14,'A question paper had 10 questions. Each question could only be answered as true(T) of False(F). Each candidate answered all the questions, Yet no two candidates wrote the answers in an identical sequence. How many different sequences of answers are possible?','20','40','512','1024',4,0,0,'0','0','0','0.9','0.1')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(15,'The average of 11 results is 50, if the average of first six results is 49 and that of the last six is 52. Find the sixth result?','46','56','34','57',2,0,0,'0','0','0','0.1','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(16,'A, B and C have Rs.500 between them, A and C together have Rs.200 and B and C Rs.350. How much does C have?','rs 50','rs 75','rs 100','rs 150',1,0,0,'0.9','0','0','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(17,'I forgot the last digit of a 7-digit telephone number. If 1 randomly dial the final 3 digits after correctly dialling the first four, then what is the chance of dialling the correct number?','1/1001','1/1000','1/999','1/990',2,0,0,'0.2','0.8','0','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(18,'The area of a triangle is with base 4m and height 5m?','20 sq m','10 sq m','5 sq m','3 sq m',2,0,0,'0','0.2','0.8','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(19,'Groups each containing 3 boys are to be formed out of 5 boys. A, B, C, D and E such that no group can contain both C and D together. What is the maximum number of such different groups?','5','6','7','8',3,0,0,'0','0.2','0','0.8','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(20,'Find the average of the first 20 natural numbers?','10','10.5','11','12',2,0,0,'0','0','0.1','0','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(21,'The average monthly salary of laborers and supervisors in a factory is Rs.1250 per month; where as the average monthly salary of 6 supervisors is Rs.2450. If the average monthly salary of the laborers is Rs.950 find the number of laborers?','18','20','22','24',4,0,0,'0.9','0','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(22,'One hundred identical coins each with probability 'p' showing up heads and tossed. If 0<p<1 and the probability of heads showing on 50 coins is equal to that of heads on 51 coins, then the value of p is:','1/2','49/101','50/101','51/101',4,0,0,'0','0.7','0.3','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(22,'One hundred identical coins each with probability p showing up heads and tossed. If 0<p<1 and the probability of heads showing on 50 coins is equal to that of heads on 51 coins, then the value of p is:','1/2','49/101','50/101','51/101',4,0,0,'0','0.7','0.3','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(23,'The area of a triangle will be when a = 1m, b = 2m, c = 3m, a, b, c being lengths of respective sides.','0 sq m','3 sq m','2 sq m','6 sq m',1,0,0,'0','0','0.7','0.3','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(24,'In how many different ways can six players be arranged in a line such that two of them, Ajeet and Mukherjee are never together?','120','240','360','480',4,0,0,'0','0','0.1','0.9','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(25,'The average of 13 numbers is 60. Average of the first 7 of them is 57 and that of the last 7 is 61. Find the 8th number?','46','32','68','51',1,0,0,'0','0','0.1','0','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(26,'In a bag there are coins of 50 paisa, 25 paisa and one rupee in the proportion 5:6:2. If there are in all Rs.42, the number of 25 paisa coins is?','32','42','52','62',2,0,0,'0.9','0','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(27,'What is the probability that a two digit number selected at random will be a multiple of '3' and not a multiple of '5'?','2/15','4/15','1/15','4/90',2,0,0,'0','0.9','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(27,'What is the probability that a two digit number selected at random will be a multiple of 3 and not a multiple of '5'?','2/15','4/15','1/15','4/90',2,0,0,'0','0.9','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(27,'What is the probability that a two digit number selected at random will be a multiple of 3 and not a multiple of 5 ?','2/15','4/15','1/15','4/90',2,0,0,'0','0.9','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(28,'The length of each side of an equilateral triangle having an area of 4√3 cm2 is?','4/3 cm','3/4 cm','3 cm','4 cm',4,0,0,'0','0.1','0.9','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(29,' In a question paper, there are four multiple choice type questions, each question has five choices with only one choice for it’s correct answer. What is the total number of ways in which a candidate will not get all the four answers correct?','19','120','624','1024',3,0,0,'0','0','0.1','0.9','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(30,'A batsman makes a score of 64 runs in the 16th innings and thus increased his average by 3. Find his average after the 16th inning?','17','29','18','19',4,0,0,'0','0','0.1','0','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(31,'There are some pigeons and hares in a zoo. If heads are counted, there are 200. If legs are counted, there are 580. The number of hares in the zoo is?','110','100','90','80',3,0,0,'0.9','0','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(32,'In his wardrobe, Dexter has three trousers. One of them is black the second is blue, and the third brown. In his wardrobe, he also has four shirts. One of them is black and the other 3 are white. He opens his wardrobe in the dark and picks out one shirt and one trouser pair without examining the colour. What is the likelihood that neither the shirt nor the trouser is black?','1/12','1/6','1/4','1/2',4,0,0,'0','0.6','0','0.4','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(33,'The altitude of an equilateral triangle of side 2√3 cm is?','3/2','1/2','3/4','3',4,0,0,'0','0','0.6','0.4','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(34,'A mixed doubles tennis game is to be played two teams(each consists of one male and one female) There are four married couples. No team is to consist a husband and his wife. What is the maximum number of games that can be played?','12','48','36','42',4,0,0,'0.5','0','0','0.5','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(35,' The average marks of a class of 30 students is 40 and that of another class of 50 students is 60. Find the average marks of all the students?','50','47.5','59','52.5',4,0,0,'0','0','0','0.5','0.5')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(36,'The compound ratio of 5:6, 3:2 and 4:5?','12:13','1:4','1:5','1:1',4,0,0,'0.8','0','0','0.2','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(37,'A man can hit a target once in 4 shots. If he fires 4 shots in succession, what is the probability that he will hit his target?','1','1/256','81/256','175/256',4,0,0,'0','0.8','0','0.2','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(38,'The base of a right triangle is 8 and hypotenuse is 10. Its area is?','12','80','59','24',4,0,0,'0','0','0.8','0.2','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(39,'Three dice (each having six faces with each face having one number from 1 or 6) are ralled. What is the number of possible outcomes such that atleast one dice shows the number 2?','36','81','91','116',3,0,0,'0','0','0','0.9','0.1')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(40,'The average salary of a person for the months of January, February, March and April is Rs.8000 and that for the months February, March, April and May is Rs.8500. If his salary for the month of May is Rs.6500, find his salary for the month of January?','3000','2500','4500','5000',3,0,0,'0','0','0','0.1','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(41,'Two numbers are in the ratio 3:5. If 9 be subtracted from each, they are in the ratio of 9:17. The first number is:','36','27','18','50',1,0,0,'0.9','0','0','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(42,'The letters B,G,I,N and R are rearranged to form the word 'Bring'. Find its probability:','1/120','1/5 power 4','1/24','1/72',1,0,0,'0.1','0.9','0','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(42,'The letters B,G,I,N and R are rearranged to form the word Bring. Find its probability:','1/120','1/5 power 4','1/24','1/72',1,0,0,'0.1','0.9','0','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(43,'The sides of a triangle are in the ratio 5: 12: 13 and its perimeter is 300 m, its area is?','3000 sq m','3127 sq m','3225 sq m','3750 sq m',1,0,0,'0.1','0','0.9','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(44,'Three flags each of different colours are available for a military exercise, Using these flags different codes can be generated by waving I. Single flag of different colours II. Any two flags in a different sequence of colours. III. three flags in a different sequence of colours. The maximum number of codes that can be generated is.','6','9','15','18',3,0,0,'0','0','0.9','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(45,'The average of 35 numbers is 25. If each number is multiplied by 5, find the new average?','125','134','170','98',1,0,0,'0','0','0','0.1','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(46,'The simple form of the ratio 2/3:2/5 is?','10:6','6:10','3:5','5:3',4,0,0,'0.8','0','0.2','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(47,'An anti- aircraft gun can take a maximum of four shots at an enemy plane moving away from it. The probability of hitting the plane at the first, second, third and fourth shots are 0.4, 0.3, 0.2 and 0.1 respectively. What is the probability that the plane is hit when all the four shots are fired?','0.6872','0.4379','0.6976','none',3,0,0,'0','0.8','0.2','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(48,'What is the area of square field whose side of length 15 m?','225 sq.m','220 sq.m','100 sq.m','30 sq.m',1,0,0,'0','0','0.7','0.3','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(49,'2 men and 1 woman board a bus of which 5 seats are vacant, one of these 5 seats is reserved for ladies. A woman may or may not sit on the seat reserved for ladies, In how many different ways can the five seats be occupied by these passengers?','15','36','48','60',2,0,0,'0','0','0','0.9','0.1')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(50,'The average of 10 numbers is 23. If each number is increased by 4, what will the new average be?','22','27','25','29',2,0,0,'0','0.1','0','0','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(51,'Two numbers are in the ratio of 5:7. If 25 be subtracted from each, they are in the ratio of 35:59. Find the numbers?','55,77','45,63','40,56','60,84',4,0,0,'0.9','0.1','0','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(52,'An experiment succeeds twice as often as it fails. What is the probability that in the next 5 trials there will be four successes?Note: As Sriram Gopal Goli points out in the comment, the experiment has only two possible outcomes, i.e. success or failure.','0','(2/3)4','5×(2/3)4×(1/3)','(2/3)4×(1/3)',3,0,0,'0','0.9','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(53,'What is the area of a square field whose diagonal of length 20 m?','300 sq m','250 sq.m','200 sq.m','400 sq.m',3,0,0,'0','0','0.9','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(54,'A student has to opt for 2 subjects out of 5 subjects for a course. Namely commerce, economics, statistics, mathematics 1 and Mathematics 2, Mathematics 2 can be offered only if mathematics 1 has also opted. The number of different combinations of two subjects which can be opted is','5','6','7','8',3,0,0,'0','0','0.1','0.9','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(55,'The average of the marks of 12 students in a class is 36. If the marks of each student are doubled, find the new average?','72','45','37','79',1,0,0,'0','0','0.1','0','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(56,'In a mixture of 60 liters, the ratio of milk and water is 2:1. What amount of water must be added to make the ratio of milk and water as 1:2?','42','56','60','77',3,0,0,'0.8','0','0','0.2','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(57,'Dinesh speaks truth in 3/4 cases and Abhishek lies in 1/5 cases. What is the percentage of cases in which both Dinesh and Abhishek contradict each other in stating a fact?','60','35','20','15',2,0,0,'0','0.8','0','0.2','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(58,'What is the perimeter of a square field whose diagonal is 8√2?','64m','32m','30m','16m',2,0,0,'0','0','0.5','0.5','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(59,'A selection is to be made for one post of principal and two posts of vice-principal amongst the six candidates called for the interview only two are eligible for the post of principal while they all are eligible for the post of vice-principal. The number of possible combinations of selectees is','4','12','18','none',4,0,0,'0','0','0','0.8','0.2')"
+dbSendQuery(db,query)
+query <- "insert into demotest4 values(60,'The average age of a group of 10 persons was decreased by 3 years when one person, whose age was 42 years, was replaced by a new person. Find the age of the new person?','22','24','12','none',3,0,0,'0','0.1','0','0','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(6,'1600 men have provisions for 28 days in the temple. If after 4 days, 400 men leave the temple, how long will the food last now?','28 days','30 days','32 days','35 days',3,0,0,'0.8','0','0','0','0.2')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(7,'When 3 fair coins are tossed together, what is the probability of getting atleast 2 tails?','1/4','2/3','1/2','None of these',3,0,0,'0','0.7','0','0.3','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(8,'The ratio of the area of a square to that of the square drawn on its diagonal is?','2:5','3:4','3:5','1:2',4,0,0,'0','0','0.9','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(9,'A person ordered 5 pairs of black socks and some pairs of brown socks. The price of a black pair was thrice that of a brown pair while preparing the bill the bill clerk inter-changed the number of black and brown pairs by mistake which increased the bill by 100% what was the number of pair of brown socks in the original order?','10','15','20','25',4,0,0,'0','0','0.1','0.9','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(10,'Find the average of the series : 312, 162, 132, 142 and 122?','194','197','162','none',4,0,0,'0','0','0.1','0','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(11,'A garrison of 2000 men has provisions for 54 days. At the end of 15 days, a reinforcement arrives, and it is now found that the provisions will last only for 20 days more. What is the reinforcement?','3900 men','2300 men','900 men','1900 men',4,0,0,'0.9','0','0.1','0','0')"
+dbSendQuery(db,query)
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+shiny::runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+query <- "insert into demotest5 values(12,'A set of cards bearing the number 200-299 is used in a game. if a card is drawn at random, what is the probability that it is divisible by 3:','0.66','0.33','0.44','0.55',2,0,0,'0','0.9','0','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(13,' A rectangular grass field is 75 m * 55 m, it has a path of 2.5 m wide all round it on the outside. Find the area of the path and the cost of constructing it at Rs.2 per sq m?','675, Rs.1350','575, Rs.1350','1350, Rs.675','none',1,0,0,'0','0.2','0.8','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(14,'There are 5 tasks and 5 persons, Task 1 cannot be assigned to either person 1 or person 2, Task 2 must be assigned to either person-3 or person-4 every person is to be assigned one task, In how many ways can the assignment be done?','6','12','24','144',3,0,0,'0','0','0','0.9','0.1')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(15,'In an exam, Amar scored 64 percent, Bhavan scored 36 percent and Chetan 44 percent. The maximum score awarded in the exam is 800. Find the average mark scored by all the three boys?','384','364','324','404',1,0,0,'0','0','0','0.1','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(16,'When two dice are thrown simultaneously, what is the probability that the sum of the two numbers that turn up is less than 11?','5/6','11/12','1/6','1/12',2,0,0,'0.9','0','0','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(17,'Divide Rs.32000 in the ratio 3:5?','12000, 20000','18000, 14000','30000, 2000','10000, 22000',1,0,0,'0.2','0.8','0','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(18,'The length of a rectangle is increased by 25% and its breadth is decreased by 20%. What is the effect on its area?','Remains same','5% decrease','5% increase','10% decrease',1,0,0,'0','0.2','0.8','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(19,'In a society, it is customary for friends of the same sex to hug and for friends of opposite sex to shake hands when they meet. A group of friends met in a party and there were 24 hand shakers. Which one among the following numbers indicates the possible number of hugs?','39','30','21','20',3,0,0,'0','0.2','0','0.8','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(20,'The average height of 50 pupils in a class is 150 cm. Five of them whose height is 146 cm, leave the class and five others whose average height is 156 cm, join. The new average height of the pupils of the class (in cm) is __________ .','149','151','152','153',1,0,0,'0','0.2','0','0','0.8')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(21,'Divide Rs.118000 among three persons A, B and C such that the ratio of the shares of A and B is 3:4 and that of B:C is 5:6?','A = 30000 B = 40000 C = 48000','A = 40000 B = 48000 C = 30000','30000 B = 48000 C = 40000','A = 48000 B = 40000 C = 30000',1,0,0,'0.9','0','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(22,'A dice is rolled three times and the sum of the numbers appearing on the uppermost face is 15. The chance that the first roll was a four is:','1/2','1/5','2/5','1/11',2,0,0,'0','0.7','0.3','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(23,'The length and breadth of a rectangle is increased by 10% and 25% respectively. What is the increase in the area?','27.5 %','37.5 %','47.5 %','57.5 %',2,0,0,'0','0','0.7','0.3','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(24,'Twelve people from a club, by picking lots. One of them will host a dinner for all once in a month. The number of dinners a particular member has to host in one year is','1','0','3','cannot be determined',4,0,0,'0','0','0.1','0.9','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(25,'Rahim bought 65 books for Rs.1150 from one shop and 50 books for Rs.920 from another. What is the average price he paid per book ?','rs 20','rs 18','rs 22','rs 16',2,0,0,'0','0','0.1','0','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(26,'The incomes of two persons A and B are in the ratio 3:4. If each saves Rs.100 per month, the ratio of their expenditures is 1:2 . Find their incomes?','100,200','200,300','150,200','250,300',3,0,0,'0.9','0','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(27,'An anti-aircraft gun can fire four shots at a time. If the probabilities of the first, second, third and the last shot hitting the enemy aircraft are 0.7, 0.6, 0.5 and 0.4, what is the probability that four shots aimed at an enemy aircraft will bring the aircraft down?','0.084','0.916','0.036','0.964',4,0,0,'0','0.9','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(28,'The side of a rhombus is 26 m and length of one of its diagonals is 20 m. The area of the rhombus is?','529 sq m','240 sq m','260 sq m','480 sq m',4,0,0,'0','0.1','0.9','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(29,'There are two identical red, two identical black, and two identical white balls.In how many different ways can the balls be placed in the cells (Each cell to contain one ball) shown above such that balls of the same colour do not occupy any two consecutive cells?','15','18','24','30',3,0,0,'0','0','0.1','0.9','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(30,'Five years ago the average of the ages of A and B was 40 years and now the average of the ages of B and C is 48 years. What will be the age of the B ten years hence?','55 years','56 years','57 years','data inadequate',4,0,0,'0','0','0.1','0','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(31,'Find the fraction which has the same ratio to 2/13 that 5/34 has to 7/48.','218/1547','376/1547','240/1547','150/1547',3,0,0,'0.9','0','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(32,'Four different objects 1, 2, 3, 4 are distributed at random in four places marked 1, 2, 3, 4.What is the probability that none of the objects occupy the place corresponding to its number?','17/24','3/8','1/2','5/8',2,0,0,'0','0.6','0','0.4','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(33,'The diagonals of a rhombus are 15 cm and 20 cm. Find its area?','120 sq m','300 sq m','150 sq m','480 sq m',3,0,0,'0','0','0.6','0.4','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(34,' In how many different ways can four books A, B, C and D be arranged one above another in a vertical order such that the books A and B are never in continuous position?','9','12','14','18',2,0,0,'0.5','0','0','0.5','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(35,'The total marks obtained by a student in Mathematics and Physics is 60 and his score in Chemistry is 20 marks more than that in Physics. Find the average marks scored in Mathamatics and Chemistry together.','40','30','25','none',1,0,0,'0','0','0','0.5','0.5')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(36,'A bag contains a certain number of 50 paise coins, 20 paise coins and 10 paise coins inthe ratio 2:3:4. If the total value of all the coins in the bag is Rs.400, find the number of coins of each kind?','50p coins = 400,20p coins = 600,10p coins = 800','50p coins = 300,20p coins = 700,10p coins = 200','50p coins = 800,20p coins = 400,10p coins = 200','50p coins = 400,20p coins = 500,10p coins = 300',1,0,0,'0.8','0','0','0.2','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(37,'There are 2 positive integers $x$ and $y$. What is the probability that $x+y$ is odd?','1/4','1/3','1/2','1/5',2,0,0,'0','0.8','0','0.2','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(38,'The perimeter of a rhombus is 68 cm and one of its diagonals is 16 cm. Find its area?','260 sq cm','240 sq cm','280 cm','220 sq cm',2,0,0,'0','0','0.8','0.2','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(39,'Amit has five friends, 3 girls and 2 boys. Amit’s wife also has 5 friends, 3 boys, and 2 girls. In how many maximum numbers of different ways can their invite 2 boys and 2 girls such that two of them are Amit’s friends and two are his wife’s?','24','38','46','58',3,0,0,'0','0','0','0.9','0.1')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(40,'The average weight of a group of persons increased from 48 kg to 51 kg, when two persons weighing 78 kg and 93 kg join the group. Find the initial number of members in the group?','21','22','23','24',3,0,0,'0','0','0','0.1','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(41,'125 liters of a mixture of milk and water contains in the ratio 3:2. How much water should now be added so that the ratio of milk and water becomes 3:4?','20','30','40','50',4,0,0,'0.9','0','0','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(42,'The probability that a arrow fired from a point will hit the target is 1/4. Three such arrows are fired simultaneously towards the target from that very point. What is the probability that the target will be hit?','19/64','23/64','23/67','37/64',4,0,0,'0.1','0.9','0','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(43,'The area of a parallelogram is 128sq m and its altitude is twice the corresponding base. Then the length of the base is?','8 m','10 m','6 m','12 m',1,0,0,'0.1','0','0.9','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(44,'In how many ways can a group of 5 men and 2 women be made out of a total of 7 men and 3 women?','63','90','126','45',1,0,0,'0','0','0.9','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(45,' A trader purchased two colour televisions for a total of Rs. 35000. He sold one colour television at 30% profit and the other 40% profit. Find the difference in the cost prices of the two televisions if he made an overall profit of 32%?','rs 21000','rs 17500','rs 19000','rs 24500',1,0,0,'0','0','0','0.1','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(46,'The food in a camp lasts for 30 men for 40 days. If ten more men join, how many days will the food last?','20','30','35','40',2,0,0,'0.8','0','0.2','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(47,'A  and B play a game where each is asked to select a number from 1 to 5. If the two numbers match, both of them win a prize. The probability that they will not win a prize in a single trial is:','1/25','24/25','20/25','23/25',3,0,0,'0','0.8','0.2','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(48,'The side of a square is increased by 25% then how much % does its area increases?','52.65','56.25','57.75','54.45',2,0,0,'0','0','0.7','0.3','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(49,'How many 4-letter words with or without meaning, can be formed out of the letters of the word, 'LOGARITHMS', if repetition of letters is not allowed?','40','400','5040','2520',3,0,0,'0','0','0','0.9','0.1')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(49,'How many 4-letter words with or without meaning, can be formed out of the letters of the word, LOGARITHMS, if repetition of letters is not allowed?','40','400','5040','2520',3,0,0,'0','0','0','0.9','0.1')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(50,'Rs. 6000 is lent out in two parts. One part is lent at 7% p.a simple interest and the other is lent at 10% p.a simple interest. The total interest at the end of one year was Rs. 450. Find the ratio of the amounts lent at the lower rate and higher rate of interest?','5:1','4:1','3:2','2:3',1,0,0,'0','0.1','0','0','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(51,'If 12 men can reap 120 acres of land in 36 days, how many acres of land can 54 men reap in 54 days?','720 acres','650 acres','810 acres','890 acres',4,0,0,'0.9','0.1','0','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(52,'A 5-digit number is formed by the digits 1,2,3,4, and 5 without repetition. What is the probability that the number formed is a multiple of 4?','1/2','1/3','1/4','1/5',4,0,0,'0','0.9','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(53,'The cross-section of a cannel is a trapezium in shape. If the cannel is 10 m wide at the top and 6 m wide at the bottom and the area of cross-section is 640 sq m, the depth of cannel is?','20 m','40 m',' 60 m','80 m',4,0,0,'0','0','0.9','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(54,'In how many different ways can the letters of the word MATHEMATICS be arranged so that the vowels always come together?','10080','4989600','120960','none',3,0,0,'0','0','0.1','0.9','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(55,'A total of 3000 chocolates were distributed among 120 boys and girls such that each boy received 2 chocolates and each girl received 3 chocolates. Find the respective number of boys and girls?','70, 50','60,60','50,70','40,80',3,0,0,'0','0','0.1','0','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(56,'10 camels cost as much as 24 horses, 16 horses cost as much as 4 oxen and 6 oxen as much as 4 elephants. If the cost of 10 elephants is Rs.170000, find the cost of a camel?','rs 5700','rs 4500','rs 6000','rs 6800',4,0,0,'0.8','0','0','0.2','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(57,'A box contains 9 red toys, 7 green toys and 9 blue toys. Each ball is of a different size. The probability that the red ball being selected is the smallest red toy, is:','1/9','2/21','1/25','6/25',1,0,0,'0','0.8','0','0.2','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(58,'The radius of a circle is increased by 1%. Find how much % does its area increases?','1.01%','5.01%','3.01%','2.01%',4,0,0,'0','0','0.5','0.5','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(59,'In how many different ways can the letters of the word OPTICAL be arranged so that the vowels always come together?','120','720','4320','2160',2,0,0,'0','0','0','0.8','0.2')"
+dbSendQuery(db,query)
+query <- "insert into demotest5 values(60,'Dacid obtained 76, 65, 82, 67 and 85 marks (out of 100) in English, Mathematics, Physics, Chemistry and Biology. What are his average marks?','65','69','72','none',4,0,0,'0','0.1','0','0','0.9')"
+dbSendQuery(db,query)
+value <- reactiveVal(1)
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+query <- "insert into demotest6 values(6,'A contractor undertakes to complete the construction of a tunnel 720 meters long in 240 days and employs 60 men for the purpose. After 120 days, he finds that only 240 meters of the tunnel is complete. How many more men should be employ in order to complete the work in time?','70 men','60 men','55 men','80 men',2,0,0,'0.8','0','0','0','0.2')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(7,'If five dice are thrown simultaneously, what is the probability of getting the sum as seven?','15/6 power 5','11/ 6 power 5','10/6 power 5','None of these',1,0,0,'0','0.7','0','0.3','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(8,'In how many different ways can the letters of the word OPTICAL be arranged so that the vowels always come together?','2160',120','720','2169',3,0,0,'0','0','0.9','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(8,'In how many different ways can the letters of the word OPTICAL be arranged so that the vowels always come together?','2160','120','720','2169',3,0,0,'0','0','0.9','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(9,'The average of 20 numbers is zero. Of them, at the most, how many may be greater than zero?','0','1','10','19',4,0,0,'0','0','0.1','0.9','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(10,'Find the average of all the numbers between 6 and 34 which are divisible by 5.','194','197','162','20',4,0,0,'0','0','0.1','0','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(11,'There are three events A,B and C, one of which must and only can happen. If the odds are 8:3 against A,5:2 against B, the odds against C must be:','13:7','3:2','43:43','2:3',3,0,0,'0.9','0','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(12,'If a:b = 4:1, then find (a - 3b)/(2a - b)?','1/7','2/7','3/7','5/7',1,0,0,'0','0.9','0','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(13,'Find the area of circle whose radius is 7m?','124 sq m','154 sq m','164 sq m','174 sq m',2,0,0,'0','0.2','0.8','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(14,'There are 30 people in a group. If all shake hands with one another , how many handshakes are possible?','445','435','24','144',2,0,0,'0','0','0','0.9','0.1')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(15,'The average of first five multiples of 3 is:','3','9','24','4',2,0,0,'0','0','0','0.1','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(16,'if (x + y)/(2x + y) = 4/5, then find (2x + y)/(3x + y) ?','5/6','4/5','1/6','1/12',1,0,0,'0.9','0','0','0.1','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(17,'If the probability that X will live 15 year is 7/8 and that Y will live 15 years is 9/10, then what is the probability that both will live after 15 years?','63/80','1/2','2/3','3/4',1,0,0,'0.2','0.8','0','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(18,'If the area of circle is 616 sq cm then its circumference?','78 m','88 m','98 m','56 m',2,0,0,'0','0.2','0.8','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(19,'If the letters of the word CHASM are rearranged to form 5 letter words such that none of the word repeat and the results arranged in ascending order as in a dictionary what is the rank of the word CHASM?','39','30','32','20',3,0,0,'0','0.2','0','0.8','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(20,'The average of the two-digit numbers, which remain the same when the digits interchange their positions, is:','33','44','55','66',3,0,0,'0','0.2','0','0','0.8')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(21,'There are two positive numbers in the ratio 5:8. If the larger number exceeds the smaller by 15, then find the smaller number?','25','30','34','67',1,0,0,'0.9','0','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(22,'Four boys and three girls stand in queue for an interview. The probability that they stand in alternate positions is:','1/35','1/5','2/5','1/11',1,0,0,'0','0.7','0.3','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(23,'Find the cost of fencing around a circular field of diameter 28 m at the rate of Rs.1.50 a meter?','145','132','123','156',2,0,0,'0','0','0.7','0.3','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(24,'In how many ways can 5 different toys be packed in 3 identical boxes such that no box is empty, if any of the boxes may hold all of the toys?','1','0','3','25',4,0,0,'0','0','0.1','0.9','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(25,'The radius of a circular wheel is 1.75 m, how many revolutions will it make in traveling 1 km?','1000','1018','1002','1016',1,0,0,'0','0','0.1','0','0.9')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(26,'An amount of Rs.1560 was divided among A, B and C in the ratio 1/2:1/3:1/4. Find the share of C?','200','300','150','360',4,0,0,'0.9','0','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(27,'Shiwani thought of a two-digit number and divided the number by the sum of the digits of the number. He found that the remainder is 3. Devesh also thought of a two-digit number and divided the number by the sum of the digits of the number. He also found that the remainder is 3. Find the probability that the two digit number thought by Shiwani and Devesh is TRUE?','1/4','1/6','1/6','1/14',4,0,0,'0','0.9','0.1','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(28,'If the wheel is 14 cm then the number of revolutions to cover a distance of 1056 cm is?','15','24','26','12',4,0,0,'0','0.1','0.9','0','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(29,'When six fair coins are tossed simultaneously, in how many of the outcomes will at most three of the coins turn up as heads?','15','18','42','30',3,0,0,'0','0','0.1','0.9','0')"
+dbSendQuery(db,query)
+query <- "insert into demotest6 values(30,'The average of non-zero number and its square is 5 times the number. The number is:','55','56','9','data inadequate',3,0,0,'0','0','0.1','0','0.9')"
+dbSendQuery(db,query)
+runApp()
+runApp()
+runApp()
+runApp()
+sqlitePath <- "d:/mydb1.db"
+db <- dbConnect(SQLite(), sqlitePath)
+db
+dbSendQuery(db,"update demotest1 set result = -1 ")
+dbSendQuery(db,"update demotest2 set result = -1 ")
+dbSendQuery(db,"update demotest3 set result = -1 ")
+dbSendQuery(db,"update demotest4 set result = -1 ")
+dbSendQuery(db,"update demotest5 set result = -1 ")
+dbSendQuery(db,"update demotest6 set result = -1 ")
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+shiny::runApp()
+runApp()
+shiny::runApp()
+runApp()
+sqlitePath <- "d:/mydb1.db"
+print(sqlitePath)
+db <- dbConnect(SQLite(), sqlitePath)
+print(db)
+dbGetQuery(db,"update studentmodel_final set ratio = 0.2")
+dbSendQuery(db,"update studentmodel_final set ratio = 0.2")
+dbSendQuery(db,"update studentmodel_final set probability = 0.3")
+dbSendQuery(db,"update studentmodel_final set geometry = 0.7")
+dbSendQuery(db,"update studentmodel_final set pNc = 0.5")
+dbSendQuery(db,"update studentmodel_final set aptitude = 0.4")
+dbSendQuery(db,"update studentmodel_final set ratio_level = 2")
+dbSendQuery(db,"update studentmodel_final set probability_level = 3")
+dbSendQuery(db,"update studentmodel_final set geometry_level = 1")
+dbSendQuery(db,"update studentmodel_final set pNc_level = 2")
+dbSendQuery(db,"update studentmodel_final set aptitude_level = 1")
+dbSendQuery(db,"update studentmodel_final set ratio = 0.6")
+dbSendQuery(db,"update studentmodel_final set probability = 0.4")
+dbSendQuery(db,"update studentmodel_final set pNc = 0.4")
+dbSendQuery(db,"update studentmodel_final set aptitude = 0.4")
+dbSendQuery(db,"update studentmodel_final set ratio_level = 4")
+dbSendQuery(db,"update studentmodel_final set probability_level = 3")
+dbSendQuery(db,"update studentmodel_final set geometry_level = 1")
+dbSendQuery(db,"update studentmodel_final set pNc_level = 3")
+dbSendQuery(db,"update studentmodel_final set ratio = 0.2")
+dbSendQuery(db,"update studentmodel_final set geometry = 0.2")
+dbSendQuery(db,"update studentmodel_final set pNc = 0.1")
+dbSendQuery(db,"update studentmodel_final set aptitude = 0.2")
+dbSendQuery(db,"update studentmodel_final set pNc_level = 2")
+shiny::runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
+runApp()
